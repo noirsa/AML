@@ -1,0 +1,5 @@
+# Dependencies for the starter notebook only.
+ucimlrepo==0.0.7
+pandas==3.0.6
+numpy==2.5.4
+ipykernel==7.4.0
