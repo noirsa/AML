@@ -1,0 +1,7 @@
+# Runtime dependencies for youtube_viral_baseline.ipynb.
+numpy==2.5.4
+pandas==3.0.6
+scipy==1.18.1
+matplotlib==3.11.2
+scikit-learn==1.9.1
+ipykernel==7.4.0
