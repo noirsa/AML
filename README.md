@@ -2,6 +2,8 @@
 
 ## YouTube viral classification
 
+Use Python 3.14. Create `.venv` with `python -m venv .venv`, then install dependencies with `.venv\Scripts\python.exe -m pip install -r requirements-youtube-viral.txt`. A project-local Python 3.14.4 runtime is also available at `.python-runtime\python.exe` on this checkout.
+
 Open [youtube_viral_baseline.ipynb](youtube_viral_baseline.ipynb) with the project's `.venv` kernel and run all cells from the project root. It uses all 12,000 synthetic videos, the supplied `viral` label, and all 12 non-view, non-ID predictors. `views` is excluded because it defines the label. Current `likes`, `comments` and `shares` are retained for the current-snapshot task. The notebook documents their synthetic dependence on views.
 
 The notebook includes data checks, a stratified 2/3–1/3 split, training-only EDA, an L2 logistic baseline tuned by five-fold training CV log loss, and a class-prior reference. Results and split membership are saved under `outputs/youtube_viral_baseline/`. Dependencies are pinned in `requirements-youtube-viral.txt`; the version-1 Kaggle archive is cached under `data/youtube_viral/raw/` and downloaded only if absent. Source: [Ved's YouTube viral dataset](https://www.kaggle.com/datasets/vedauv/what-makes-a-yt-video-go-viral-12000-vids), CC0.

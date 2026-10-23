@@ -1,3 +1,4 @@
+# Python 3.14; verified with Python 3.14.4.
 # Runtime dependencies for youtube_viral_baseline.ipynb.
 numpy==2.5.4
 pandas==3.0.6
@@ -5,3 +6,7 @@ scipy==1.18.1
 matplotlib==3.11.2
 scikit-learn==1.9.1
 ipykernel==7.4.0
+
+# Notebook execution.
+nbclient==0.11.0
+nbformat==5.11.1
