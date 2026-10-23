@@ -1,3 +1,17 @@
+# AML-MDS notebooks
+
+## YouTube viral classification
+
+Open [youtube_viral_baseline.ipynb](youtube_viral_baseline.ipynb) with the project's `.venv` kernel and run all cells from the project root. It uses all 12,000 synthetic videos, the supplied `viral` label, and all 12 non-view, non-ID predictors. `views` is excluded because it defines the label. Current `likes`, `comments` and `shares` are retained for the current-snapshot task. The notebook documents their synthetic dependence on views.
+
+The notebook includes data checks, a stratified 2/3–1/3 split, training-only EDA, an L2 logistic baseline tuned by five-fold training CV log loss, and a class-prior reference. Results and split membership are saved under `outputs/youtube_viral_baseline/`. Dependencies are pinned in `requirements-youtube-viral.txt`; the version-1 Kaggle archive is cached under `data/youtube_viral/raw/` and downloaded only if absent. Source: [Ved's YouTube viral dataset](https://www.kaggle.com/datasets/vedauv/what-makes-a-yt-video-go-viral-12000-vids), CC0.
+
+## Job Dataset proposal baseline
+
+Open [job_dataset_baseline.ipynb](job_dataset_baseline.ipynb) for the data preparation, leakage checks, training-CV Ridge baseline and actual test results. It contains short operational notes; proposal/report prose is kept outside the notebook. Run from the project root with the `.venv` kernel and the original dataset ZIP.
+
+The previous Dry Bean starter remains below for reference.
+
 # AML-MDS proposal starter: Dry Bean
 
 Open `proposal_dry_bean.ipynb` using the Python environment in `.venv` and run the cells from the project root (`D:\AML`).
